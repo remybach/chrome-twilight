@@ -4,6 +4,11 @@ This is just my implementation and is probably not 100% what you would expect. T
 
 As always, if you see something that you can improve on, please do so and send a pull request :)
 
+## Screenshots
+
+![Elements Panel](https://raw.github.com/remybach/chrome-twilight/master/resources/elements.png)
+![Sources Panel](https://raw.github.com/remybach/chrome-twilight/master/resources/sources.png)
+
 ## Installation
 
 [This post][installation] by [Darcy Clarke][darcy-clarke] should help you out.
@@ -14,7 +19,7 @@ As always, if you see something that you can improve on, please do so and send a
 
 ## Credits
 
-I based this file off of the [mnml Theme][mnml] [Michael P. Pfeiffer][michael-pfeiffer], which itself was based off of [the Tomorrow Theme][tomorrow] by [Ben Truyman][ben-truyman].
+I based this file off of the [mnml Theme][mnml] by [Michael P. Pfeiffer][michael-pfeiffer], which itself was based off of [the Tomorrow Theme][tomorrow] by [Ben Truyman][ben-truyman].
 
 
 
