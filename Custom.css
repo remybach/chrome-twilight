@@ -251,10 +251,10 @@
 }
 #-webkit-web-inspector .webkit-line-content,
 #-webkit-web-inspector .webkit-javascript-ident {
-	color: #FFF !important;
+    color: #FFF !important;
 }
 #-webkit-web-inspector .webkit-javascript-keyword {
-	color: #AA8253 !important;
+	color: #F9EE98 !important;
 }
 #-webkit-web-inspector .webkit-javascript-comment {
 	color: #777777 !important;
