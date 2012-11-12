@@ -15,7 +15,7 @@ As always, if you see something that you can improve on, please do so and send a
 
 ## Known Issues
 
-* The toolbar in the detached inspector isn't looking too hot right now.
+* If you come across any issues, please let me know by submitting an issue using the link above. Bonus marks for submitting a pull request to fix the issue!
 
 ## Credits
 
