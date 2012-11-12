@@ -425,3 +425,10 @@
 	background-color: #242729 !important;
 	outline: 1px solid #000000 !important;
 }
+
+#-webkit-web-inspector .selector-matches {
+	color:#FFF !important;
+}
+#-webkit-web-inspector .media {
+	color:#8693A5 !important;
+}
