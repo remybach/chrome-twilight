@@ -8,7 +8,7 @@
  *
  **********************************************/
 #-webkit-web-inspector ::selection {
-	background: #333;
+	background: rgba(255, 255, 255, 0.2);
 	opacity: 1;
 }
 #-webkit-web-inspector #toolbar {
@@ -95,13 +95,13 @@
 }
 #-webkit-web-inspector #console-messages {
 	font-family: 'DroidSansMono', Menlo, monospace !important;
-	background: #1d1f21;
+	background: #141414;
 }
 #-webkit-web-inspector #console-messages a {
-	color: #666 !important;
+	color: #8B98AB !important;
 }
 #-webkit-web-inspector #console-messages a:hover {
-	color: #999 !important;
+	color: #7587A6 !important;
 }
 #-webkit-web-inspector .console-message {
 	color: #F1F1F1 !important;
@@ -114,7 +114,7 @@
 	color: #C4C7C6 !important;
 }
 #-webkit-web-inspector .console-formatted-number {
-	color: #D77F61 !important;
+	color: #CF6A4C !important;
 }
 #-webkit-web-inspector .console-formatted-string {
 	color: #8F9D6A !important;
@@ -154,7 +154,7 @@
 	color: #c5c8c6;
 }
 #-webkit-web-inspector .console-error-level .console-message-text .title {
-	color: #f66 !important;
+	color: #CF6A4C !important;
 	-webkit-animation-name: webkit-error-level;
 	-webkit-animation-duration: 2s;
 	-webkit-animation-iteration-count: infinite;
@@ -197,11 +197,9 @@
 #-webkit-web-inspector .webkit-html-comment {
 	color: #777777 !important;
 }
-#-webkit-web-inspector .webkit-html-tag {
-	color: #CDA869 !important;
-}
+#-webkit-web-inspector .webkit-html-tag,
 #-webkit-web-inspector .webkit-html-attribute-name {
-	color: #F9EE98 !important;
+	color: #AC885B !important;
 }
 #-webkit-web-inspector .webkit-html-attribute-value {
 	color: #8F9D6A !important;
@@ -216,32 +214,33 @@
 #-webkit-web-inspector .webkit-html-external-link {
 	color: #8F9D6A !important;
 }
+#-webkit-web-inspector .webkit-css-color {
+	color:#CA7840 !important;
+}
 #-webkit-web-inspector .webkit-css-comment {
 	color: #777777 !important;
 }
 #-webkit-web-inspector .webkit-css-selector,
 #-webkit-web-inspector .styles-selector {
-	color: #F9EE98 !important;
+	color: #AC885B !important;
 }
+#-webkit-web-inspector .webkit-css-keyword,
 #-webkit-web-inspector .webkit-css-property {
-	color: #eec574 !important;
-}
-#-webkit-web-inspector .webkit-css-keyword {
-	color: #F9EE98 !important;
+	color: #E0C589 !important;
 }
 #-webkit-web-inspector .webkit-css-number,
 #-webkit-web-inspector .properties-tree .value {
-	color: #D77F61 !important;
+	color: #CF6A4C !important;
 }
 #-webkit-web-inspector .webkit-css-important,
 #-webkit-web-inspector .webkit-css-at-rule {
-	color: #8693A5 !important;
+	color: #7587A6 !important;
 }
 #-webkit-web-inspector .webkit-css-string {
 	color: #8F9D6A !important;
 }
 #-webkit-web-inspector .webkit-css-url {
-	color: #eec574 !important;
+	color: #7587A6 !important;
 }
 #-webkit-web-inspector .sidebar-separator {
 	padding: 3px 5px 5px !important;
@@ -263,21 +262,21 @@
 	color: #8F9D6A !important;
 }
 #-webkit-web-inspector .webkit-javascript-number {
-	color: #D77F61 !important;
+	color: #CF6A4C !important;
 }
 #-webkit-web-inspector .webkit-javascript-regexp {
 	color: #E9C062 !important;
 }
 #-webkit-web-inspector .section .properties .name,
 #-webkit-web-inspector .event-properties .name {
-	color: #82a1be !important;
+	color: #7587A6 !important;
 }
 #-webkit-web-inspector .editing {
-	color: #c5c8c6 !important;
+	color: #AC885B !important;
 	background-color: #777 !important;
 }
 #-webkit-web-inspector .styles-section.read-only {
-	background: #242729 !important;
+	background: rgba(255, 255, 255, 0.1) !important;
 }
 #-webkit-web-inspector .styles-section,
 #-webkit-web-inspector .subtitle {
@@ -327,16 +326,16 @@
 }
 #-webkit-web-inspector .section .properties .name,
 #-webkit-web-inspector .event-properties .name {
-	color: #82a1be !important;
+	color: #7587A6 !important;
 }
 #-webkit-web-inspector .styles-selector {
-	color: #F9EE98 !important;
+	color: #FFF !important;
 }
 #-webkit-web-inspector .section .header {
 	color: #CCC !important;
 }
 #-webkit-web-inspector .properties .value {
-	color: #c2c3c3 !important;
+	color: #F9EE98 !important;
 }
 #-webkit-web-inspector .metrics {
 	color: #333 !important;
@@ -349,7 +348,7 @@
 	text-shadow: none !important;
 }
 #-webkit-web-inspector .console-formatted-number {
-	color: #D77F61 !important;
+	color: #CF6A4C !important;
 }
 #-webkit-web-inspector .console-formatted-string {
 	color: #8F9D6A !important;
@@ -360,7 +359,7 @@
 	color: #777777 !important;
 }
 #-webkit-web-inspector .console-formatted-function {
-	color: #c5c8c6 !important;
+	color: #F9EE98 !important;
 }
 #-webkit-web-inspector .console-formatted-regexp {
 	color: #E9C062 !important;
@@ -430,7 +429,7 @@
 	color:#FFF !important;
 }
 #-webkit-web-inspector .media {
-	color:#8693A5 !important;
+	color:#7587A6 !important;
 }
 
 /*===== Detached Inspector =====*/
