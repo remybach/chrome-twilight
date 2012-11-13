@@ -434,42 +434,54 @@
 }
 
 /*===== Detached Inspector =====*/
-#-webkit-web-inspector.detached .toolbar-item .toolbar-icon {
+#-webkit-web-inspector.detached .toolbar-item .toolbar-icon,
+#-webkit-web-inspector.dock-to-right .toolbar-item .toolbar-icon {
 	background-size:190px !important;
 	height:24px !important;
 	width:24px !important;
 }
 #-webkit-web-inspector.detached #toolbar .toolbar-item.toggleable,
-#-webkit-web-inspector.detached #toolbar .toolbar-item.toggleable.toggled-on {
+#-webkit-web-inspector.detached #toolbar .toolbar-item.toggleable.toggled-on,
+#-webkit-web-inspector.dock-to-right #toolbar .toolbar-item.toggleable,
+#-webkit-web-inspector.dock-to-right #toolbar .toolbar-item.toggleable.toggled-on {
 	padding-bottom:2px !important;
 	padding-top:2px !important;
 }
-#-webkit-web-inspector.detached #toolbar .toggled-on .toolbar-label {
+#-webkit-web-inspector.detached #toolbar .toggled-on .toolbar-label,
+#-webkit-web-inspector.dock-to-right #toolbar .toggled-on .toolbar-label {
 	margin-top:-1px !important;
 }
-#-webkit-web-inspector.detached .toolbar-item.resources .toolbar-icon {
+#-webkit-web-inspector.detached .toolbar-item.resources .toolbar-icon,
+#-webkit-web-inspector.dock-to-right .toolbar-item.resources .toolbar-icon {
 	background-position:-24px 0 !important;
 }
-#-webkit-web-inspector.detached .toolbar-item.network .toolbar-icon {
+#-webkit-web-inspector.detached .toolbar-item.network .toolbar-icon,
+#-webkit-web-inspector.dock-to-right .toolbar-item.network .toolbar-icon {
 	background-position:-46px 0 !important;
 }
-#-webkit-web-inspector.detached .toolbar-item.scripts .toolbar-icon {
+#-webkit-web-inspector.detached .toolbar-item.scripts .toolbar-icon,
+#-webkit-web-inspector.dock-to-right .toolbar-item.scripts .toolbar-icon {
 	background-position:-69px 0 !important;
 }
-#-webkit-web-inspector.detached .toolbar-item.timeline .toolbar-icon {
+#-webkit-web-inspector.detached .toolbar-item.timeline .toolbar-icon,
+#-webkit-web-inspector.dock-to-right .toolbar-item.timeline .toolbar-icon {
 	background-position:-93px 0 !important;
 }
-#-webkit-web-inspector.detached .toolbar-item.profiles .toolbar-icon {
+#-webkit-web-inspector.detached .toolbar-item.profiles .toolbar-icon,
+#-webkit-web-inspector.dock-to-right .toolbar-item.profiles .toolbar-icon {
 	background-position:-118px 0 !important;
 }
-#-webkit-web-inspector.detached .toolbar-item.audits .toolbar-icon {
+#-webkit-web-inspector.detached .toolbar-item.audits .toolbar-icon,
+#-webkit-web-inspector.dock-to-right .toolbar-item.audits .toolbar-icon {
 	background-position:-142px 0 !important;
 }
-#-webkit-web-inspector.detached .toolbar-item.console .toolbar-icon {
+#-webkit-web-inspector.detached .toolbar-item.console .toolbar-icon,
+#-webkit-web-inspector.dock-to-right .toolbar-item.console .toolbar-icon {
 	background-position:-167px 0 !important;
 }
 
-#-webkit-web-inspector #toolbar .toolbar-item {
+#-webkit-web-inspector.detached #toolbar .toolbar-item,
+#-webkit-web-inspector.dock-to-right #toolbar .toolbar-item {
 	padding-top:0 !important;
 }
 /*===== END Detached Inspector =====*/
