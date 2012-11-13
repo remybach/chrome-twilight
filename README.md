@@ -8,6 +8,7 @@ As always, if you see something that you can improve on, please do so and send a
 
 ![Elements Panel](https://raw.github.com/remybach/chrome-twilight/master/resources/elements.png)
 ![Sources Panel](https://raw.github.com/remybach/chrome-twilight/master/resources/sources.png)
+![Dock to Right & Floating Element Panel](https://raw.github.com/remybach/chrome-twilight/master/resources/dock_right-floating.png)
 
 ## Installation
 
