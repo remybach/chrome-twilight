@@ -1,4 +1,4 @@
-/**********************************************
+*********************************************
  *
  * Twilight based Theme for Chrome DevTools by Rémy Bach
  *
@@ -7,10 +7,13 @@
  * https://gist.github.com/3040634
  *
  **********************************************/
-#-webkit-web-inspector ::selection {
+#-webkit-web-inspector ::selection,
+table .webkit-line-content ::selection {
 	background: rgba(255, 255, 255, 0.2);
 	opacity: 1;
 }
+
+/*===== Toolbar =====*/
 #-webkit-web-inspector #toolbar {
 	background: -webkit-linear-gradient(#555555, #333333) !important;
 	border-top: 5px solid #E9C062 !important;
@@ -40,6 +43,9 @@
 #-webkit-web-inspector #toolbar-search-item {
 	margin-top: 12px !important;
 }
+/*===== END Toolbar =====*/
+
+/*===== Inspector Chrome =====*/
 #-webkit-web-inspector #main {
 	top: 50px !important;
 }
@@ -63,6 +69,7 @@
 	color: #666666 !important;
 	text-shadow: none !important;
 }
+
 #-webkit-web-inspector .glyph {
 	background-color: #666666 !important;
 }
@@ -93,6 +100,9 @@
 	color: #d9d9d9 !important;
 	background: #333 !important;
 }
+/*===== END Inspector Chrome =====*/
+
+/*===== Console =====*/
 #-webkit-web-inspector #console-messages {
 	font-family: 'DroidSansMono', Menlo, monospace !important;
 	background: #141414;
@@ -170,6 +180,8 @@
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjRGNTc2MTZDMTA2MTFFMDgwRUZGQ0JCMjgzMzU0MTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjRGNTc2MTdDMTA2MTFFMDgwRUZGQ0JCMjgzMzU0MTYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5MzM3N0Y2MUMxMDUxMUUwODBFRkZDQkIyODMzNTQxNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5MzM3N0Y2MkMxMDUxMUUwODBFRkZDQkIyODMzNTQxNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Plf0eOsAAAB4SURBVHjaYvz//z8DMYAFxph+BqyhA8qtQFaUacKIUAgFLkBsDMSCUMXvYRJMaApdgfgsEKcB8W6oJqwK30MVr4YqOgPEodgUgoASkkkgjfewKSyHmqIEdYIJlEZR6ILk606oonsYwQMEe6A+PQtlowBGYgMcIMAAF2wcFPVNZx8AAAAASUVORK5CYII=) !important;
 	color: #c5c8c6 !important;
 }
+/*===== END Console =====*/
+
 #-webkit-web-inspector .script-view,
 #-webkit-web-inspector .properties-tree,
 #-webkit-web-inspector .pane,
@@ -181,7 +193,8 @@
 #-webkit-web-inspector .text-editor-contents,
 #-webkit-web-inspector .pane.expanded,
 #-webkit-web-inspector #elements-content,
-#-webkit-web-inspector .resource-view.json {
+#-webkit-web-inspector .resource-view.json,
+table .webkit-line-content {
 	background: #1d1f21 !important;
 	font-size: 12px !important;
 }
@@ -194,96 +207,137 @@
 #-webkit-web-inspector #elements-content .selected {
 	background-color: #4C4F50 !important;
 }
-#-webkit-web-inspector .webkit-html-comment {
+table .webkit-line-content {
+	color:#FFF;
+}
+
+/*===== Syntax Highlighting =====*/
+#-webkit-web-inspector .webkit-html-comment,
+table .webkit-line-content .webkit-html-comment {
 	color: #777777 !important;
 }
 #-webkit-web-inspector .webkit-html-tag,
-#-webkit-web-inspector .webkit-html-attribute-name {
+table .webkit-line-content .webkit-html-tag,
+#-webkit-web-inspector .webkit-html-attribute-name,
+table .webkit-line-content .webkit-html-attribute-name {
 	color: #AC885B !important;
 }
-#-webkit-web-inspector .webkit-html-attribute-value {
+#-webkit-web-inspector .webkit-html-attribute-value,
+table .webkit-line-content .webkit-html-attribute-value {
 	color: #8F9D6A !important;
 }
-#-webkit-web-inspector .webkit-html-text-node .webkit-html-css-node {
+#-webkit-web-inspector .webkit-html-text-node .webkit-html-css-node,
+table .webkit-line-content .webkit-html-text-node .webkit-html-css-node {
 	color: #c2c3c3 !important;
 }
-#-webkit-web-inspector .webkit-html-js-node {
+#-webkit-web-inspector .webkit-html-js-node,
+table .webkit-line-content .webkit-html-js-node {
 	color: #c2c3c3 !important;
 }
 #-webkit-web-inspector .webkit-html-resource-link,
-#-webkit-web-inspector .webkit-html-external-link {
+table .webkit-line-content .webkit-html-resource-link,
+#-webkit-web-inspector .webkit-html-external-link,
+table .webkit-line-content .webkit-html-external-link {
 	color: #8F9D6A !important;
 }
-#-webkit-web-inspector .webkit-css-color {
+#-webkit-web-inspector .webkit-css-color,
+table .webkit-line-content .webkit-css-color {
 	color:#CA7840 !important;
 }
-#-webkit-web-inspector .webkit-css-comment {
+#-webkit-web-inspector .webkit-css-comment,
+table .webkit-line-content .webkit-css-comment {
 	color: #777777 !important;
 }
 #-webkit-web-inspector .webkit-css-selector,
-#-webkit-web-inspector .styles-selector {
+table .webkit-line-content .webkit-css-selector,
+#-webkit-web-inspector .styles-selector,
+table .webkit-line-content .styles-selector {
 	color: #AC885B !important;
 }
 #-webkit-web-inspector .webkit-css-keyword,
-#-webkit-web-inspector .webkit-css-property {
+table .webkit-line-content .webkit-css-keyword,
+#-webkit-web-inspector .webkit-css-property,
+table .webkit-line-content .webkit-css-property {
 	color: #E0C589 !important;
 }
 #-webkit-web-inspector .webkit-css-number,
-#-webkit-web-inspector .properties-tree .value {
+table .webkit-line-content .webkit-css-number,
+#-webkit-web-inspector .properties-tree .value,
+table .webkit-line-content .properties-tree .value {
 	color: #CF6A4C !important;
 }
 #-webkit-web-inspector .webkit-css-important,
-#-webkit-web-inspector .webkit-css-at-rule {
+table .webkit-line-content .webkit-css-important,
+#-webkit-web-inspector .webkit-css-at-rule,
+table .webkit-line-content .webkit-css-at-rule {
 	color: #7587A6 !important;
 }
-#-webkit-web-inspector .webkit-css-string {
+#-webkit-web-inspector .webkit-css-string,
+table .webkit-line-content .webkit-css-string {
 	color: #8F9D6A !important;
 }
-#-webkit-web-inspector .webkit-css-url {
+#-webkit-web-inspector .webkit-css-url,
+table .webkit-line-content .webkit-css-url {
 	color: #7587A6 !important;
 }
-#-webkit-web-inspector .sidebar-separator {
+#-webkit-web-inspector .sidebar-separator,
+table .webkit-line-content .sidebar-separator {
 	padding: 3px 5px 5px !important;
 	background: #242729 !important;
 	color: #b3b3b3 !important;
 	text-shadow: none !important;
 }
-#-webkit-web-inspector .webkit-line-content,
-#-webkit-web-inspector .webkit-javascript-ident {
+#-webkit-web-inspector table .webkit-line-content,
+table .webkit-line-content table .webkit-line-content,
+#-webkit-web-inspector .webkit-javascript-ident,
+table .webkit-line-content .webkit-javascript-ident {
     color: #FFF !important;
 }
-#-webkit-web-inspector .webkit-javascript-keyword {
+#-webkit-web-inspector .webkit-javascript-keyword,
+table .webkit-line-content .webkit-javascript-keyword {
 	color: #F9EE98 !important;
 }
-#-webkit-web-inspector .webkit-javascript-comment {
+#-webkit-web-inspector .webkit-javascript-comment,
+table .webkit-line-content .webkit-javascript-comment {
 	color: #777777 !important;
 }
-#-webkit-web-inspector .webkit-javascript-string {
+#-webkit-web-inspector .webkit-javascript-string,
+table .webkit-line-content .webkit-javascript-string {
 	color: #8F9D6A !important;
 }
-#-webkit-web-inspector .webkit-javascript-number {
+#-webkit-web-inspector .webkit-javascript-number,
+table .webkit-line-content .webkit-javascript-number {
 	color: #CF6A4C !important;
 }
-#-webkit-web-inspector .webkit-javascript-regexp {
+#-webkit-web-inspector .webkit-javascript-regexp,
+table .webkit-line-content .webkit-javascript-regexp {
 	color: #E9C062 !important;
 }
 #-webkit-web-inspector .section .properties .name,
-#-webkit-web-inspector .event-properties .name {
+table .webkit-line-content .section .properties .name,
+#-webkit-web-inspector .event-properties .name,
+table .webkit-line-content .event-properties .name {
 	color: #7587A6 !important;
 }
-#-webkit-web-inspector .editing {
+#-webkit-web-inspector .editing,
+table .webkit-line-content .editing {
 	color: #AC885B !important;
 	background-color: #777 !important;
 }
-#-webkit-web-inspector .styles-section.read-only {
+#-webkit-web-inspector .styles-section.read-only,
+table .webkit-line-content .styles-section.read-only {
 	background: rgba(255, 255, 255, 0.1) !important;
 }
 #-webkit-web-inspector .styles-section,
-#-webkit-web-inspector .subtitle {
+table .webkit-line-content .styles-section,
+#-webkit-web-inspector .subtitle,
+table .webkit-line-content .subtitle {
 	color: #777777 !important;
 }
 #-webkit-web-inspector .styles-sidebar-separator,
-#-webkit-web-inspector .pane > .title {
+table .webkit-line-content .styles-sidebar-separator,
+#-webkit-web-inspector .pane > .title,
+table .webkit-line-content .pane > .title {
 	background-image: -webkit-linear-gradient(#555555, #333333) !important;
 	border-top-color: #666 !important;
 	border-bottom-color: #333 !important;
@@ -292,51 +346,75 @@
 	text-overflow: ellipsis !important;
 }
 #-webkit-web-inspector .pane > .title > button,
-#-webkit-web-inspector .pane > .title > select {
+table .webkit-line-content .pane > .title > button,
+#-webkit-web-inspector .pane > .title > select,
+table .webkit-line-content .pane > .title > select {
 	-webkit-filter: invert(1);
 }
-#-webkit-web-inspector .split-view-sidebar-right {
+#-webkit-web-inspector .split-view-sidebar-right,
+table .webkit-line-content .split-view-sidebar-right {
 	background: #222 !important;
 }
 #-webkit-web-inspector .section > .header::before,
+table .webkit-line-content .section > .header::before,
 #-webkit-web-inspector .properties-tree li.parent::before,
+table .webkit-line-content .properties-tree li.parent::before,
 #-webkit-web-inspector .event-bars .event-bar .header::before,
+table .webkit-line-content .event-bars .event-bar .header::before,
 #-webkit-web-inspector .outline-disclosure li.parent::before,
-#-webkit-web-inspector .styles-section.matched-styles .properties li.parent .expand-element {
+table .webkit-line-content .outline-disclosure li.parent::before,
+#-webkit-web-inspector .styles-section.matched-styles .properties li.parent .expand-element,
+table .webkit-line-content .styles-section.matched-styles .properties li.parent .expand-element {
 	content: url(chrome-devtools://devtools/Images/treeRightTriangleWhite.png) !important;
 }
 #-webkit-web-inspector .styles-section .properties li.parent::before,
-#-webkit-web-inspector .styles-section .properties li.parent.expanded::before {
+table .webkit-line-content .styles-section .properties li.parent::before,
+#-webkit-web-inspector .styles-section .properties li.parent.expanded::before,
+table .webkit-line-content .styles-section .properties li.parent.expanded::before {
 	content: none !important;
 }
-#-webkit-web-inspector .styles-section.matched-styles .properties li.parent .expand-element {
+#-webkit-web-inspector .styles-section.matched-styles .properties li.parent .expand-element,
+table .webkit-line-content .styles-section.matched-styles .properties li.parent .expand-element {
 	margin-right: 1px !important;
 	margin-left: -5px !important;
 	opacity: 0.6 !important;
 }
 #-webkit-web-inspector .section.expanded > .header::before,
+table .webkit-line-content .section.expanded > .header::before,
 #-webkit-web-inspector .properties-tree li.parent.expanded::before,
+table .webkit-line-content .properties-tree li.parent.expanded::before,
 #-webkit-web-inspector .event-bars .event-bar.expanded .header::before,
+table .webkit-line-content .event-bars .event-bar.expanded .header::before,
 #-webkit-web-inspector .outline-disclosure li.parent.expanded::before,
-#-webkit-web-inspector .styles-section.matched-styles .properties li.parent.expanded .expand-element {
+table .webkit-line-content .outline-disclosure li.parent.expanded::before,
+#-webkit-web-inspector .styles-section.matched-styles .properties li.parent.expanded .expand-element,
+table .webkit-line-content .styles-section.matched-styles .properties li.parent.expanded .expand-element {
 	content: url(chrome-devtools://devtools/Images/treeDownTriangleWhite.png) !important;
 }
-#-webkit-web-inspector .child-editing {
+#-webkit-web-inspector .child-editing,
+table .webkit-line-content .child-editing {
 	color: #c5c8c6 !important;
 }
 #-webkit-web-inspector .section .properties .name,
-#-webkit-web-inspector .event-properties .name {
+table .webkit-line-content .section .properties .name,
+#-webkit-web-inspector .event-properties .name,
+table .webkit-line-content .event-properties .name {
 	color: #7587A6 !important;
 }
-#-webkit-web-inspector .styles-selector {
+#-webkit-web-inspector .styles-selector,
+table .webkit-line-content .styles-selector {
 	color: #FFF !important;
 }
-#-webkit-web-inspector .section .header {
+#-webkit-web-inspector .section .header,
+table .webkit-line-content .section .header {
 	color: #CCC !important;
 }
-#-webkit-web-inspector .properties .value {
+#-webkit-web-inspector .properties .value,
+table .webkit-line-content .properties .value {
 	color: #F9EE98 !important;
 }
+/*===== END Syntax Highlighting =====*/
+
 #-webkit-web-inspector .metrics {
 	color: #333 !important;
 }
@@ -420,7 +498,7 @@
 	background: #333 !important;
 	border-radius: 5px !important;
 }
-#-webkit-web-inspector .webkit-execution-line.webkit-line-content {
+#-webkit-web-inspector .webkit-execution-linetable .webkit-line-content {
 	background-color: #242729 !important;
 	outline: 1px solid #000000 !important;
 }
@@ -483,4 +561,4 @@
 #-webkit-web-inspector.dock-to-right #toolbar .toolbar-item {
 	padding-top:0 !important;
 }
-/*===== END Detached Inspector =====*/
+/*===== END Detached Inspector =====

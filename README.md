@@ -2,6 +2,8 @@
 
 This is just my implementation and is probably not 100% what you would expect. The way the Chrome inspector wraps things is different to how code editors do it, so it's not possible to get it _identical_, but we can get a close approximation.
 
+Includes the Elements, Resources (view js/css/html file), Sources (view js/css/html file), and Console panels; styles for the toolbar (Elements/Resources/Network/etc); and even view source styles (note: not JS/CSS view source though - that's not possible at the moment).
+
 As always, if you see something that you can improve on, please do so and send a pull request :)
 
 ## DISCLAIMER
