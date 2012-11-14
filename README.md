@@ -4,6 +4,12 @@ This is just my implementation and is probably not 100% what you would expect. T
 
 As always, if you see something that you can improve on, please do so and send a pull request :)
 
+## DISCLAIMER
+
+Please note: custom themes are unofficial and may potentially break existing DevTools functionality.
+
+As always, if you encounter bugs with the DevTools, please [report them][crbug], but disable the theme and test again, first. ;)
+
 ## Screenshots
 
 Normal Elements panel
@@ -33,6 +39,7 @@ I based this file off of the [mnml Theme][mnml] by [Michael P. Pfeiffer][michael
 
 
 [ben-truyman]:https://github.com/bentruyman
+[crbug]:http://crbug.com
 [darcy-clarke]:http://darcyclarke.me/
 [installation]:http://darcyclarke.me/design/skin-your-chrome-inspector/
 [michael-pfeiffer]:https://github.com/frontdevDE
