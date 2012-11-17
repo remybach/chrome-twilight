@@ -13,38 +13,6 @@ table .webkit-line-content ::selection {
 	opacity: 1;
 }
 
-/*===== Toolbar =====*/
-#-webkit-web-inspector #toolbar {
-	background: -webkit-linear-gradient(#555555, #333333) !important;
-	border-top: 5px solid #E9C062 !important;
-	border-bottom: 1px solid #444444 !important;
-	padding-top: 0 !important;
-	height: 50px !important;
-}
-#-webkit-web-inspector #toolbar .toolbar-label {
-	color: #ffffff !important;
-}
-#-webkit-web-inspector #toolbar .toggled-on .toolbar-label {
-	color: #ffffff !important;
-}
-#-webkit-web-inspector #toolbar .toolbar-item {
-	padding: 10px 15px !important;
-}
-#-webkit-web-inspector #toolbar .toolbar-item.toggleable.toggled-on {
-	background: -webkit-linear-gradient(#444444, #333333) !important;
-	padding: 10px 13px !important;
-}
-#-webkit-web-inspector .toolbar-item.close-left {
-	margin-top: 1px !important;
-}
-#-webkit-web-inspector #toolbar-controls {
-	margin-top: -4px !important;
-}
-#-webkit-web-inspector #toolbar-search-item {
-	margin-top: 12px !important;
-}
-/*===== END Toolbar =====*/
-
 /*===== Inspector Chrome =====*/
 #-webkit-web-inspector #main {
 	top: 50px !important;
@@ -291,7 +259,7 @@ table .webkit-line-content .sidebar-separator {
 table .webkit-line-content table .webkit-line-content,
 #-webkit-web-inspector .webkit-javascript-ident,
 table .webkit-line-content .webkit-javascript-ident {
-    color: #FFF !important;
+	color: #FFF !important;
 }
 #-webkit-web-inspector .webkit-javascript-keyword,
 table .webkit-line-content .webkit-javascript-keyword {
@@ -514,21 +482,57 @@ table .webkit-line-content .properties .value {
 	color:#7587A6 !important;
 }
 
+/*===== Toolbar =====*/
+#-webkit-web-inspector #toolbar {
+	background: -webkit-linear-gradient(#555555, #333333) !important;
+	border-top: 5px solid #E9C062 !important;
+	border-bottom: 1px solid #444444 !important;
+	padding-top: 0 !important;
+	height: 50px !important;
+}
+#-webkit-web-inspector #toolbar .toolbar-label {
+	color: #ffffff !important;
+}
+#-webkit-web-inspector #toolbar .toggled-on .toolbar-label {
+	color: #ffffff !important;
+}
+#-webkit-web-inspector #toolbar button.toolbar-item {
+	padding: 10px 15px !important;
+}
+#-webkit-web-inspector #toolbar button.toolbar-item.toggleable.toggled-on {
+	background: -webkit-linear-gradient(#444444, #333333) !important;
+	padding: 10px 13px !important;
+}
+#-webkit-web-inspector button.toolbar-item.close-left {
+	margin-top: 1px !important;
+}
+#-webkit-web-inspector #toolbar-controls {
+	margin-top: -4px !important;
+}
+#-webkit-web-inspector #toolbar-search-item {
+	margin-top: 12px !important;
+}
+#-webkit-web-inspector #toolbar-dropdown {
+	left:auto !important;
+	right:0 !important;
+}
+/*===== END Toolbar =====*/
+
 /*===== Detached Inspector =====*/
-#-webkit-web-inspector.detached .toolbar-item .toolbar-icon,
-#-webkit-web-inspector.dock-to-right .toolbar-item .toolbar-icon {
+#-webkit-web-inspector.detached button.toolbar-item .toolbar-icon,
+#-webkit-web-inspector.dock-to-right button.toolbar-item .toolbar-icon {
 	background-size:190px !important;
 	height:24px !important;
 	width:24px !important;
 }
-#-webkit-web-inspector.detached .toolbar-item:active .toolbar-icon,
-#-webkit-web-inspector.dock-to-right .toolbar-item:active .toolbar-icon {
+#-webkit-web-inspector.detached button.toolbar-item:active .toolbar-icon,
+#-webkit-web-inspector.dock-to-right button.toolbar-item:active .toolbar-icon {
 	background-position-y:0 !important;
 }
-#-webkit-web-inspector.detached #toolbar .toolbar-item.toggleable,
-#-webkit-web-inspector.detached #toolbar .toolbar-item.toggleable.toggled-on,
-#-webkit-web-inspector.dock-to-right #toolbar .toolbar-item.toggleable,
-#-webkit-web-inspector.dock-to-right #toolbar .toolbar-item.toggleable.toggled-on {
+#-webkit-web-inspector.detached #toolbar button.toolbar-item.toggleable,
+#-webkit-web-inspector.detached #toolbar button.toolbar-item.toggleable.toggled-on,
+#-webkit-web-inspector.dock-to-right #toolbar button.toolbar-item.toggleable,
+#-webkit-web-inspector.dock-to-right #toolbar button.toolbar-item.toggleable.toggled-on {
 	padding-bottom:2px !important;
 	padding-top:2px !important;
 }
@@ -536,37 +540,37 @@ table .webkit-line-content .properties .value {
 #-webkit-web-inspector.dock-to-right #toolbar .toggled-on .toolbar-label {
 	margin-top:-1px !important;
 }
-#-webkit-web-inspector.detached .toolbar-item.resources .toolbar-icon,
-#-webkit-web-inspector.dock-to-right .toolbar-item.resources .toolbar-icon {
+#-webkit-web-inspector.detached button.toolbar-item.resources .toolbar-icon,
+#-webkit-web-inspector.dock-to-right button.toolbar-item.resources .toolbar-icon {
 	background-position:-24px 0 !important;
 }
-#-webkit-web-inspector.detached .toolbar-item.network .toolbar-icon,
-#-webkit-web-inspector.dock-to-right .toolbar-item.network .toolbar-icon {
+#-webkit-web-inspector.detached button.toolbar-item.network .toolbar-icon,
+#-webkit-web-inspector.dock-to-right button.toolbar-item.network .toolbar-icon {
 	background-position:-47px 0 !important;
 }
-#-webkit-web-inspector.detached .toolbar-item.scripts .toolbar-icon,
-#-webkit-web-inspector.dock-to-right .toolbar-item.scripts .toolbar-icon {
+#-webkit-web-inspector.detached button.toolbar-item.scripts .toolbar-icon,
+#-webkit-web-inspector.dock-to-right button.toolbar-item.scripts .toolbar-icon {
 	background-position:-70px 0 !important;
 }
-#-webkit-web-inspector.detached .toolbar-item.timeline .toolbar-icon,
-#-webkit-web-inspector.dock-to-right .toolbar-item.timeline .toolbar-icon {
+#-webkit-web-inspector.detached button.toolbar-item.timeline .toolbar-icon,
+#-webkit-web-inspector.dock-to-right button.toolbar-item.timeline .toolbar-icon {
 	background-position:-95px 0 !important;
 }
-#-webkit-web-inspector.detached .toolbar-item.profiles .toolbar-icon,
-#-webkit-web-inspector.dock-to-right .toolbar-item.profiles .toolbar-icon {
+#-webkit-web-inspector.detached button.toolbar-item.profiles .toolbar-icon,
+#-webkit-web-inspector.dock-to-right button.toolbar-item.profiles .toolbar-icon {
 	background-position:-119px 0 !important;
 }
-#-webkit-web-inspector.detached .toolbar-item.audits .toolbar-icon,
-#-webkit-web-inspector.dock-to-right .toolbar-item.audits .toolbar-icon {
+#-webkit-web-inspector.detached button.toolbar-item.audits .toolbar-icon,
+#-webkit-web-inspector.dock-to-right button.toolbar-item.audits .toolbar-icon {
 	background-position:-142px 0 !important;
 }
-#-webkit-web-inspector.detached .toolbar-item.console .toolbar-icon,
-#-webkit-web-inspector.dock-to-right .toolbar-item.console .toolbar-icon {
+#-webkit-web-inspector.detached button.toolbar-item.console .toolbar-icon,
+#-webkit-web-inspector.dock-to-right button.toolbar-item.console .toolbar-icon {
 	background-position:-167px 0 !important;
 }
 
-#-webkit-web-inspector.detached #toolbar .toolbar-item,
-#-webkit-web-inspector.dock-to-right #toolbar .toolbar-item {
+#-webkit-web-inspector.detached #toolbar button.toolbar-item,
+#-webkit-web-inspector.dock-to-right #toolbar button.toolbar-item {
 	padding-top:0 !important;
 }
-/*===== END Detached Inspector =====
+/*===== END Detached Inspector =====*/
