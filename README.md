@@ -14,7 +14,7 @@ As always, if you encounter bugs with the DevTools, please [report them][crbug],
 
 ## The 3D
 
-I've added a 3D effect to the icons in the tabs. To see an example of the effect, see [this codepen][codepen-3d] I made to demonstrate how it works.
+I've added a 3D hover effect to the icons in the tabs. To see an example of the effect, see [this codepen][codepen-3d] I made to demonstrate how it works.
 
 If you don't like the 3d tab icon version, I've created a branch without that effect [here][no-3d].
 
