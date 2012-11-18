@@ -12,6 +12,12 @@ Please note: custom themes are unofficial and may potentially break existing Dev
 
 As always, if you encounter bugs with the DevTools, please [report them][crbug], but disable the theme and test again, first. ;)
 
+## The 3D
+
+I've added a 3D effect to the icons in the tabs. To see an example of the effect, see [this codepen][codepen-3d] I made to demonstrate how it works.
+
+If you don't like the 3d tab icon version, I've created a branch without that effect [here][no-3d].
+
 ## Screenshots
 
 Normal Elements panel
@@ -41,9 +47,11 @@ I based this file off of the [mnml Theme][mnml] by [Michael P. Pfeiffer][michael
 
 
 [ben-truyman]:https://github.com/bentruyman
+[codepen-3d]:http://codepen.io/remybach/details/fGdJB#pen-details-tab
 [crbug]:http://crbug.com
 [darcy-clarke]:http://darcyclarke.me/
 [installation]:http://darcyclarke.me/design/skin-your-chrome-inspector/
 [michael-pfeiffer]:https://github.com/frontdevDE
 [mnml]:https://github.com/frontdevDE/mnml-devtools-theme
+[no-3d]:https://github.com/remybach/chrome-twilight/tree/no-3d
 [tomorrow]:https://gist.github.com/3040634

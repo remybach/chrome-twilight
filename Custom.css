@@ -1,4 +1,4 @@
-/*********************************************
+/********************************************
  *
  * Twilight based Theme for Chrome DevTools by Rémy Bach
  *
@@ -482,6 +482,7 @@ table .webkit-line-content .properties .value {
 	color:#7587A6 !important;
 }
 
+
 /*===== Toolbar =====*/
 #-webkit-web-inspector #toolbar {
 	background: -webkit-linear-gradient(#555555, #333333) !important;
@@ -492,6 +493,7 @@ table .webkit-line-content .properties .value {
 }
 #-webkit-web-inspector #toolbar .toolbar-label {
 	color: #ffffff !important;
+	display:block !important;
 }
 #-webkit-web-inspector #toolbar .toggled-on .toolbar-label {
 	color: #ffffff !important;
@@ -512,65 +514,134 @@ table .webkit-line-content .properties .value {
 #-webkit-web-inspector #toolbar-search-item {
 	margin-top: 12px !important;
 }
+
+#-webkit-web-inspector button.toolbar-item {
+	display:inline !important;
+	height:45px !important;
+	position:relative !important;
+	width:75px !important;
+
+	-webkit-perspective:250 !important;
+}
+#-webkit-web-inspector button.toolbar-item .toolbar-icon {
+	height:32px !important;
+	position:relative !important;
+	width:32px !important;
+	z-index:1 !important;
+}
+
+#-webkit-web-inspector button.toolbar-item .toolbar-label {
+	position:absolute !important;
+	top:15px !important;
+	z-index:0 !important;
+}
+
+/* Rotate to the Back */
+#-webkit-web-inspector button.toolbar-item:hover .toolbar-icon,
+#-webkit-web-inspector button.toolbar-item .toolbar-label {
+	-webkit-transform:translateZ(-32px) rotateY(180deg);
+	
+	-webkit-animation-duration:0.33s;
+	-webkit-animation-name:rotateOut;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-fill-mode:forwards;
+}
+/* Rotate to the front */
+#-webkit-web-inspector button.toolbar-item .toolbar-icon,
+#-webkit-web-inspector button.toolbar-item:hover .toolbar-label {
+	-webkit-animation-duration:0.33s;
+	-webkit-animation-name:rotateIn;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-fill-mode:forwards;
+}
+
+#-webkit-web-inspector button.toolbar-item:active .toolbar-icon {
+	background-position-y:0 !important;
+}
+#-webkit-web-inspector #toolbar button.toolbar-item.toggleable,
+#-webkit-web-inspector #toolbar button.toolbar-item.toggleable.toggled-on {
+	padding-bottom:7px !important;
+	padding-top:7px !important;
+}
+
+/* Make the toolbar icons look uniform across states. */
+#-webkit-web-inspector .toolbar-icon {
+	/* For some really weird reason, I need to specify the full url here :/ */
+	background-image:url(chrome-devtools://devtools/Images/toolbarIcons.png) !important;
+}
+#-webkit-web-inspector .toolbar-item.resources .toolbar-icon {
+	background-position-x:-32px !important;
+}
+#-webkit-web-inspector .toolbar-item.network .toolbar-icon {
+	background-position-x:-64px !important;
+}
+#-webkit-web-inspector .toolbar-item.scripts .toolbar-icon {
+	background-position-x:-95px !important;
+}
+#-webkit-web-inspector .toolbar-item.timeline .toolbar-icon {
+	background-position-x:-128px !important;
+}
+#-webkit-web-inspector .toolbar-item.profiles .toolbar-icon {
+	background-position-x:-160px !important;
+}
+#-webkit-web-inspector .toolbar-item.audits .toolbar-icon {
+	background-position-x:-192px !important;
+}
+#-webkit-web-inspector .toolbar-item.console .toolbar-icon {
+	background-position-x:-224px !important;
+}
 #-webkit-web-inspector #toolbar-dropdown {
 	left:auto !important;
 	right:0 !important;
 }
 /*===== END Toolbar =====*/
 
-/*===== Detached Inspector =====*/
-#-webkit-web-inspector.detached button.toolbar-item .toolbar-icon,
-#-webkit-web-inspector.dock-to-right button.toolbar-item .toolbar-icon {
-	background-size:190px !important;
-	height:24px !important;
-	width:24px !important;
-}
-#-webkit-web-inspector.detached button.toolbar-item:active .toolbar-icon,
-#-webkit-web-inspector.dock-to-right button.toolbar-item:active .toolbar-icon {
-	background-position-y:0 !important;
-}
-#-webkit-web-inspector.detached #toolbar button.toolbar-item.toggleable,
-#-webkit-web-inspector.detached #toolbar button.toolbar-item.toggleable.toggled-on,
-#-webkit-web-inspector.dock-to-right #toolbar button.toolbar-item.toggleable,
-#-webkit-web-inspector.dock-to-right #toolbar button.toolbar-item.toggleable.toggled-on {
-	padding-bottom:2px !important;
-	padding-top:2px !important;
-}
-#-webkit-web-inspector.detached #toolbar .toggled-on .toolbar-label,
-#-webkit-web-inspector.dock-to-right #toolbar .toggled-on .toolbar-label {
-	margin-top:-1px !important;
-}
-#-webkit-web-inspector.detached button.toolbar-item.resources .toolbar-icon,
-#-webkit-web-inspector.dock-to-right button.toolbar-item.resources .toolbar-icon {
-	background-position:-24px 0 !important;
-}
-#-webkit-web-inspector.detached button.toolbar-item.network .toolbar-icon,
-#-webkit-web-inspector.dock-to-right button.toolbar-item.network .toolbar-icon {
-	background-position:-47px 0 !important;
-}
-#-webkit-web-inspector.detached button.toolbar-item.scripts .toolbar-icon,
-#-webkit-web-inspector.dock-to-right button.toolbar-item.scripts .toolbar-icon {
-	background-position:-70px 0 !important;
-}
-#-webkit-web-inspector.detached button.toolbar-item.timeline .toolbar-icon,
-#-webkit-web-inspector.dock-to-right button.toolbar-item.timeline .toolbar-icon {
-	background-position:-95px 0 !important;
-}
-#-webkit-web-inspector.detached button.toolbar-item.profiles .toolbar-icon,
-#-webkit-web-inspector.dock-to-right button.toolbar-item.profiles .toolbar-icon {
-	background-position:-119px 0 !important;
-}
-#-webkit-web-inspector.detached button.toolbar-item.audits .toolbar-icon,
-#-webkit-web-inspector.dock-to-right button.toolbar-item.audits .toolbar-icon {
-	background-position:-142px 0 !important;
-}
-#-webkit-web-inspector.detached button.toolbar-item.console .toolbar-icon,
-#-webkit-web-inspector.dock-to-right button.toolbar-item.console .toolbar-icon {
-	background-position:-167px 0 !important;
+/*===== Animations =====*/
+@-webkit-keyframes rotateIn {
+	0% {
+		opacity:0;
+		-webkit-transform:translateZ(-64px) translateX(0) rotateY(180deg);
+	}
+
+	1% {
+		-webkit-transform:translateZ(-64px) rotateY(-180deg);
+	}
+ 
+	50% {
+		opacity:0.5;
+		z-index:1;
+	
+		-webkit-transform:translateZ(-32px) translateX(-16px) rotateY(-90deg);
+	}
+
+	100% {
+		opacity:1;
+		z-index:1;
+	
+		-webkit-transform:translateZ(0) translateX(0) rotateY(0deg);
+	}
 }
 
-#-webkit-web-inspector.detached #toolbar button.toolbar-item,
-#-webkit-web-inspector.dock-to-right #toolbar button.toolbar-item {
-	padding-top:0 !important;
+@-webkit-keyframes rotateOut {
+	0% {
+		opacity:1;
+		
+		-webkit-transform:translateZ(0) translateX(0) rotateY(0deg);
+	}
+
+	50% {
+		opacity:0.5;
+		z-index:0;
+		
+		-webkit-transform:translateZ(-32px) translateX(16px) rotateY(90deg);
+	}
+
+	100% {
+		opacity:0;
+		z-index:0;
+		
+		-webkit-transform:translateZ(-64px) translateX(0) rotateY(180deg);
+	}
 }
-/*===== END Detached Inspector =====*/
+
+/*===== END Animations =====*/
