@@ -382,7 +382,8 @@ table .webkit-line-content .section .header {
 	color: #CCC !important;
 }
 #-webkit-web-inspector .properties .value,
-table .webkit-line-content .properties .value {
+table .webkit-line-content .properties .value,
+#-webkit-web-inspector .console-formatted-boolean {
 	color: #F9EE98 !important;
 }
 /*===== END Syntax Highlighting =====*/
