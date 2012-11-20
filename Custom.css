@@ -470,6 +470,10 @@ table .webkit-line-content .properties .value {
 	background: #333 !important;
 	border-radius: 5px !important;
 }
+#-webkit-web-inspector .webkit-line-content.webkit-execution-line {
+	background-color:rgba(117, 135, 166, 0.2) !important;
+	outline:1px dashed #7587A6 !important;
+}
 #-webkit-web-inspector .webkit-execution-linetable .webkit-line-content {
 	background-color: #242729 !important;
 	outline: 1px solid #000000 !important;
