@@ -339,12 +339,6 @@ table .webkit-line-content .outline-disclosure li.parent::before,
 table .webkit-line-content .styles-section.matched-styles .properties li.parent .expand-element {
 	content: url(chrome-devtools://devtools/Images/treeRightTriangleWhite.png) !important;
 }
-#-webkit-web-inspector .styles-section .properties li.parent::before,
-table .webkit-line-content .styles-section .properties li.parent::before,
-#-webkit-web-inspector .styles-section .properties li.parent.expanded::before,
-table .webkit-line-content .styles-section .properties li.parent.expanded::before {
-	content: none !important;
-}
 #-webkit-web-inspector .styles-section.matched-styles .properties li.parent .expand-element,
 table .webkit-line-content .styles-section.matched-styles .properties li.parent .expand-element {
 	margin-right: 1px !important;
