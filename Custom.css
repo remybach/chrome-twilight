@@ -536,8 +536,8 @@ table .webkit-line-content .properties .value,
 }
 
 /* Rotate to the Back */
-#-webkit-web-inspector button.toolbar-item:hover .toolbar-icon,
-#-webkit-web-inspector button.toolbar-item .toolbar-label {
+#-webkit-web-inspector.show-toolbar-icons button.toolbar-item:hover .toolbar-icon,
+#-webkit-web-inspector.show-toolbar-icons button.toolbar-item .toolbar-label {
 	-webkit-transform:translateZ(-32px) rotateY(180deg);
 	
 	-webkit-animation-duration:0.33s;
@@ -546,19 +546,19 @@ table .webkit-line-content .properties .value,
 	-webkit-animation-fill-mode:forwards;
 }
 /* Rotate to the front */
-#-webkit-web-inspector button.toolbar-item .toolbar-icon,
-#-webkit-web-inspector button.toolbar-item:hover .toolbar-label {
+#-webkit-web-inspector.show-toolbar-icons button.toolbar-item .toolbar-icon,
+#-webkit-web-inspector.show-toolbar-icons button.toolbar-item:hover .toolbar-label {
 	-webkit-animation-duration:0.33s;
 	-webkit-animation-name:rotateIn;
 	-webkit-animation-timing-function:linear;
 	-webkit-animation-fill-mode:forwards;
 }
 
-#-webkit-web-inspector button.toolbar-item:active .toolbar-icon {
+#-webkit-web-inspector.show-toolbar-icons button.toolbar-item:active .toolbar-icon {
 	background-position-y:0 !important;
 }
-#-webkit-web-inspector #toolbar button.toolbar-item.toggleable,
-#-webkit-web-inspector #toolbar button.toolbar-item.toggleable.toggled-on {
+#-webkit-web-inspector.show-toolbar-icons #toolbar button.toolbar-item.toggleable,
+#-webkit-web-inspector.show-toolbar-icons #toolbar button.toolbar-item.toggleable.toggled-on {
 	padding-bottom:7px !important;
 	padding-top:7px !important;
 }
